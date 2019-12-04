@@ -1,0 +1,57 @@
+/* Main styles inherited by everything else. */
+body {
+  text-align: center;
+  background: black;
+  color: Snow;
+  font-size: 1.4em;
+}
+
+/* Link styles. */
+a {
+  text-decoration: none;
+  color: MistyRose;
+}
+a:focus, a:hover {
+  text-decoration: underline;
+}
+
+/* Primary sections vertical spacing. */
+header, main, footer {
+  margin: 1.4rem 0;
+}
+/* Primary sections base font and spacing sizes */
+main, footer {
+  font-size: 1rem;
+}
+
+/* Spacing within headers */
+header h1, header h2 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+header p {
+  margin: 0;
+}
+
+/* Styling the event figures */
+figure {
+  margin: 0 1rem;
+}
+@media all and (max-width: 800px) { /* On smaller screens use the width fully */
+  figure {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+figure header {
+  max-width: 95%;
+  margin: 1rem auto;
+}
+figure img {
+  max-width: 100%;
+  min-width: 50%;
+}
+figure .copyright {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
