@@ -1,0 +1,19 @@
+{
+  "name": "wildlife-gardeners-of-haggerston.github.io",
+  "version": "0.0.1",
+  "description": "The code for https://wildlifegardenersofhaggerston.org/",
+  "repository": "https://github.com/wildlife-gardeners-of-haggerston/wildlife-gardeners-of-haggerston.github.io.git",
+  "author": "jimCresswell <jim.cresswell@gmail.com>",
+  "license": "Unlicensed",
+  "private": true,
+  "scripts": {
+    "serve": "reload -b"
+  },
+  "devDependencies": {
+    "csslint": "^1.0.5",
+    "htmlhint": "^0.11.0",
+    "reload": "^3.0.3",
+    "stylelint": "^12.0.0",
+    "stylelint-config-standard": "^19.0.0"
+  }
+}
