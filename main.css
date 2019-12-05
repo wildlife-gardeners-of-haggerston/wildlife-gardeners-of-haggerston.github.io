@@ -1,56 +1,158 @@
-/* Main styles inherited by everything else. */
-body {
-  text-align: center;
-  background: black;
-  color: Snow;
-  font-size: 1.4em;
-}
-
-/* Link styles. */
-a {
-  text-decoration: none;
-  color: MistyRose;
-}
-a:focus, a:hover {
-  text-decoration: underline;
-}
-
-/* Primary sections vertical spacing. */
-header, main, footer {
-  margin: 1.4rem 0;
-}
-/* Primary sections base font and spacing sizes */
-main, footer {
-  font-size: 1rem;
-}
-
-/* Spacing within headers */
-header h1, header h2 {
-  margin-top: 0;
-  margin-bottom: 0.4rem;
-}
-header p {
+/* Reset some browser defaults. */
+body,
+header,
+main,
+footer,
+h1,
+h2,
+p,
+ul,
+ol {
+  padding: 0;
   margin: 0;
 }
 
-/* Styling the event figures */
-figure {
-  margin: 0 1rem;
+ol,
+ul {
+  list-style: none;
 }
-@media all and (max-width: 800px) { /* On smaller screens use the width fully */
-  figure {
-    margin-left: 0;
+
+/**
+ * Set the global values.
+ */
+
+:root {
+  /* Define reusable colours */
+  --col_bg: black;
+  --col_text: snow;
+
+  /* Define reusable font sizes and spacings */
+  --font_base_size: 1.4em;
+  --space_big: 2rem;
+  --space_medium: 1rem;
+  --space_small: 0.5rem;
+
+  /**
+   * Main styles inherited by everything else.
+   */
+
+  /* The default background colour. */
+  background: var(--col_bg);
+
+  /* The default text colour. */
+
+  color: var(--col_text);
+
+  /* The base font size that defines all measurements. */
+  font-size: var(--font_base_size);
+
+  /* The default element alignment */
+  text-align: center;
+}
+
+/**
+ * Default link styles.
+ */
+
+a {
+  color: White;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+/**
+ * Default horizontal-rule styles.
+ */
+hr {
+  margin: var(--space_medium) 0;
+}
+
+/**
+ * Default image styles.
+ */
+
+/* Don't allow images in article to be wider than the page. */
+img {
+  max-width: 100%;
+  margin-bottom: var(--space_small);
+}
+
+/**
+ * Default paragraph styles.
+ */
+
+p {
+  margin-bottom: var(--space_small);
+}
+
+/**
+ * Primary sections.
+ */
+
+header {
+  margin-bottom: var(--space_big);
+}
+
+main {
+  margin-bottom: var(--space_big);
+}
+
+footer {
+  margin-bottom: var(--space_medium);
+}
+
+/* Large screen horizontal margins */
+header,
+main,
+footer {
+  margin-right: var(--space_big);
+  margin-left: var(--space_big);
+}
+
+/* Smaller screen horizontal margins. */
+@media all and (max-width: 800px) {
+  header,
+  main,
+  footer {
     margin-right: 0;
+    margin-left: 0;
   }
 }
-figure header {
-  max-width: 95%;
-  margin: 1rem auto;
+
+/* Horizontal-rule in the main Header. */
+
+header hr {
+  margin: var(--space_big) 0;
 }
-figure img {
-  max-width: 100%;
+
+/**
+ * Heading spacings.
+ */
+
+h1 {
+  margin-bottom: var(--space_medium);
 }
-figure .copyright {
-  font-size: 1rem;
-  margin-top: 0.2rem;
+
+h2 {
+  margin-bottom: var(--space_small);
+}
+
+/**
+ * Styling within the 'article' sections.
+ */
+
+/* By default add a left/right margin to articles */
+article {
+  margin-bottom: var(--space_big);
+}
+
+/* Center article headers and leave space to the sides. */
+article header {
+  margin-right: auto;
+  margin-bottom: var(--space_medium);
+  margin-left: auto;
 }
