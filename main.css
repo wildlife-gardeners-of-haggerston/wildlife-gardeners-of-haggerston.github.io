@@ -25,6 +25,7 @@ ul {
   /* Define reusable colours */
   --col_bg: black;
   --col_text: snow;
+  --col_link: lightgreen;
 
   /* Define reusable font sizes and spacings */
   --font_base_size: 1.4em;
@@ -55,7 +56,8 @@ ul {
  */
 
 a {
-  color: White;
+  color: var(--col_link);
+  font-weight: bolder;
   text-decoration: none;
 }
 
