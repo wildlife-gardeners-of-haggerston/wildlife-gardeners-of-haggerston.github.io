@@ -18,8 +18,8 @@ ul {
 }
 
 /**
- * Set the global values.
- */
+* Set the global values.
+*/
 
 :root {
   /* Define reusable colours */
@@ -34,8 +34,8 @@ ul {
   --space_small: 0.5rem;
 
   /**
-   * Main styles inherited by everything else.
-   */
+  * Main styles inherited by everything else.
+  */
 
   /* The default background colour. */
   background: var(--col_bg);
@@ -52,8 +52,8 @@ ul {
 }
 
 /**
- * Default link styles.
- */
+* Default link styles.
+*/
 
 a {
   color: var(--col_link);
@@ -67,15 +67,15 @@ a:hover {
 }
 
 /**
- * Default horizontal-rule styles.
- */
+* Default horizontal-rule styles.
+*/
 hr {
   margin: var(--space_medium) 0;
 }
 
 /**
- * Default image styles.
- */
+* Default image styles.
+*/
 
 /* Don't allow images in article to be wider than the page. */
 img {
@@ -84,16 +84,16 @@ img {
 }
 
 /**
- * Default paragraph styles.
- */
+* Default paragraph styles.
+*/
 
 p {
   margin-bottom: var(--space_small);
 }
 
 /**
- * Primary sections.
- */
+* Primary sections.
+*/
 
 header {
   margin-bottom: var(--space_big);
@@ -132,8 +132,8 @@ header hr {
 }
 
 /**
- * Heading spacings.
- */
+* Heading spacings.
+*/
 
 h1 {
   margin-bottom: var(--space_medium);
@@ -144,8 +144,8 @@ h2 {
 }
 
 /**
- * Styling within the 'article' sections.
- */
+* Styling within the 'article' sections.
+*/
 
 /* By default add a left/right margin to articles */
 article {
