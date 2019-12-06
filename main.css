@@ -41,8 +41,10 @@ ul {
   background: var(--col_bg);
 
   /* The default text colour. */
-
   color: var(--col_text);
+
+  /* Default typeface. */
+  font-family: Georgia, serif;
 
   /* The base font size that defines all measurements. */
   font-size: var(--font_base_size);
