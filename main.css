@@ -23,12 +23,12 @@ ul {
 
 :root {
   /* Define reusable colours */
-  --col_bg: black;
-  --col_text: snow;
-  --col_link: lightgreen;
+  --col_bg: #f2f0df; /* faun */
+  --col_text: black;
+  --col_link: #3fa435; /* green */
 
-  /* Define reusable font sizes and spacings */
-  --font_base_size: 1.4em;
+  /* Define reusable font sizes and page spacings */
+  --font_base_size: 1.2em;
   --space_big: 2rem;
   --space_medium: 1rem;
   --space_small: 0.5rem;
@@ -44,7 +44,7 @@ ul {
   color: var(--col_text);
 
   /* Default typeface. */
-  font-family: Georgia, serif;
+  font-family: 'Muli', sans-serif;
 
   /* The base font size that defines all measurements. */
   font-size: var(--font_base_size);
